@@ -18,22 +18,35 @@
             <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
                 <div class="bg-green-400 p-8 rounded-xl">
                     <h4 class="text-2xl">Deposit</h4>
-                    <h2 class="text-4xl">$00</h2>
+                    <h2 class="text-4xl">$<span id="deposit-amount">00</span></h2>
                 </div>
                 <div class="bg-yellow-400 p-8 rounded-xl">
                     <h4 class="text-2xl">Withdraw</h4>
-                    <h2 class="text-4xl">$00</h2>
+                    <h2 class="text-4xl">$<span id="total-withdraw">00</span></h2>
                 </div>
                 <div class="bg-violet-400 p-8 rounded-xl">
                     <h4 class="text-2xl">Balance</h4>
-                    <h2 class="text-4xl">$1240</h2>
+                    <h2 id="total-amount" class="text-4xl">$<span id="total-balance">1240</span></h2>
                 </div>
-                <div></div>
-                <div></div>
+            </div>
+        </section>
+
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+                <div class="bg-fuchsia-600 p-8 rounded-xl">
+                    <h4 class="text-2xl mb-4 text-white">Please Deposit</h4>
+                    <input class="w-9/12 block mb-2 px-3" type="text" name="" id="user-deposit" placeholder="Enter your amount">
+                    <button class="bg-sky-500  hover:bg-sky-700 px-2 py-2 rounded-2xl text-white" id="btn-deposit">Deposit</button>
+                </div>
+                <div class="bg-sky-300 p-8 rounded-xl">
+                    <h4 class="text-2xl text-white">Please Withdraw</h4>
+                    <input class="w-9/12 block mb-2 px-3" type="text" name="" id="user-withdraw" placeholder="Enter your amount">
+                    <button class="bg-sky-500  hover:bg-sky-700 px-2 py-2 rounded-2xl text-white" id="btn-withdraw">Withdraw</button>
+                </div>
             </div>
         </section>
     </main>
-
+    <script src="JS/calculation.js"></script>
 </body>
 
 </html>
