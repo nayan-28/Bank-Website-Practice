@@ -11,9 +11,9 @@ document.getElementById('btn-submit').addEventListener('click', function() {
     /*verify email and password*/
 
     if (emailAddress === 'nayan@gmail.com' && password === 'nayan') {
-        console.log('Valid User');
+        location.href = 'bank.html';
     } else {
-        console.log('Invalid User');
+        alert('Wrong Password')
     }
 
 })
